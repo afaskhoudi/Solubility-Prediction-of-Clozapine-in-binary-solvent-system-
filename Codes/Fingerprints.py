@@ -130,10 +130,10 @@ def smiles_to_chemberta(smiles, batch_size=32):
 
 # ── Generate ChemBERTa embeddings ─────────────────────────────────────────────
 print("Generating embeddings for solvent 1...")
-fp_solvent1 = smiles_to_chemberta(df['SMILES_1'])  # shape (684, 768)
+fp_solvent1 = smiles_to_chemberta(df['SMILES_1']) 
 
 print("Generating embeddings for solvent 2...")
-fp_solvent2 = smiles_to_chemberta(df['SMILES_2'])  # shape (684, 768)
+fp_solvent2 = smiles_to_chemberta(df['SMILES_2'])  
 
 print(f"fp_solvent1 shape: {fp_solvent1.shape}")
 print(f"fp_solvent2 shape: {fp_solvent2.shape}")
